@@ -1,5 +1,28 @@
 <?php
 
+// ********************************* FIRST METHOD **********************************
+
+
+
+sudo a2dismod php5.6
+sudo a2enmod php7.2
+sudo service apache2 restart
+  
+sudo update-alternatives --config php
+  
+  
+//  You will get below screen in CMD
+  
+    Selection    Path             Priority   Status
+------------------------------------------------------------
+  0            /usr/bin/php7.3   73        auto mode
+  1            /usr/bin/php5.6   56        manual mode
+* 2            /usr/bin/php7.3   73        manual mode
+
+// Press <enter> to keep the current choice[*], or type selection number: 1
+  
+// ********************************* SECOND METHOD **********************************
+
 // Switch Between PHP Version
 
 // If you have installed multiple PHP versions and want to use differently than the default. Use following steps to switch between php5.6 and php7.2 version. You can use the same command for other PHP versions.

@@ -85,3 +85,15 @@ sudo apt-get install php7.2-curl php7.2-dev php7.2-gd php7.2-mbstring php7.2-zip
 
 /************************** END Install PHP Different Versions *******************************************/
 
+
+NOTICE: Not enabling PHP 7.2 FPM by default.
+NOTICE: To enable PHP 7.2 FPM in Apache2 do:
+NOTICE: a2enmod proxy_fcgi setenvif
+NOTICE: a2enconf php7.2-fpm
+NOTICE: You are seeing this message because you have apache2 package installed.
+
+So do what it says:
+
+sudo a2enmod proxy_fcgi setenvif
+sudo a2enconf php7.2-fpm
+sudo systemctl restart apache2.service

@@ -118,3 +118,13 @@ So do what it says:
 sudo a2enmod proxy_fcgi setenvif
 sudo a2enconf php7.2-fpm
 sudo systemctl restart apache2.service
+
+#PHP-FPM
+sudo systemctl stop php8.0-fpm
+sudo systemctl disable php8.0-fpm
+
+sudo apt install php7.4-fpm
+sudo systemctl start php7.4-fpm
+sudo systemctl enable php7.4-fpm
+
+sudo a2disconf php8.0-fpm
